@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Page Title</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="container">
+			<div class="card" style="width: 18rem;">
+			  	<img class="card-img-top" src="./img/amazonia.jpg" alt="Card image cap">
+			 	<div class="card-body">
+			    	<h5 class="card-title">Card title</h5>
+			    	<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    	<button type="button" class="btn btn-primary" onclick="abrir();" style="width: 100%;">Abrir</button>
+			  	</div>
+			</div>
+		</div>
+
+		<div class="modal fade bd-example-modal-lg modalAmazonia" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		    <div class="modal-dialog modal-lg">
+
+		    	<div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title">Amazônia</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-content">
+				        <img class="image" src="./img/amazonia.jpg" alt=""> 
+				      </div>
+				      <div class="modal-footer">
+				       	<p>
+				       		Descrição da Amazônia.
+				       	</p>
+				      </div>
+				</div>
+		    </div>
+		</div>
+
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		function abrir(){
+			$(".modalAmazonia").modal('show');
+		}
+		let cards = '';
+	</script>		
+	</body>
+</html>

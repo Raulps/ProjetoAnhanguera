@@ -1,0 +1,134 @@
+/* Corpo da página */
+body {
+    width: 90%;
+    max-width: 5000px;
+    margin: auto;
+    background: url(projeto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background color: white;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+/* Fundo transparente contendo os cards */
+main {
+  background: #01045f36;
+  padding: 40px 37px;
+  margin-top: 20px;
+  border-radius: 40px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-color: #242463;
+}
+
+/* Título e subtítulo */
+.titlepage, .subtitle {
+  text-align: center;
+  margin: 0;
+  color: white;
+}
+
+/* Titulo e texto dos cards */
+.card-title, .card-text {
+  color: black;  
+}
+
+/* Contem os pontos turísticos */
+.card {
+  width: 90%;
+  max-width: 5000px;
+  margin-top: 5rem;
+  border-radius: 9.5rem;
+  border-color: #35355c;
+  background-color: #ffffffd1;
+
+  transition: 1.2s ease;
+  cursor: pointer;
+}
+
+/* Ao passar o mouse sobre os cards */
+.card:hover {
+  transform: scale(1.2);
+  box-shadow: 10px 25px 50px rgb(47 0 150);
+}
+
+/* Top */
+.navbar {
+  position: relative;
+  align-items: center;
+  padding: 0.5rem 7rem;
+}
+
+/* Card do topo da página */
+.container_top {
+    background-color: #6f42c1;
+    border-radius: 4.25rem;
+    max-width: 100%;
+    text-align-last: center;
+    border-top-style: solid;
+    border-top-color: #371367;
+    border-bottom-style: solid;
+    border-bottom-color: #371367;
+}
+
+/* Conteúdo card do topo */
+.card-img-top {
+    max-width: max-content;
+    border-radius: 20rem;
+}
+
+/* Display no topo da página */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 0px;
+}
+
+/* Display no topo */
+.nav {    
+    display: flex;    
+    flex-wrap: wrap;
+    padding-left: 101px;
+    margin-bottom: 0px;
+    margin-top: 58px;
+}
+
+/* Contador 0 e 1 do botão voltar ao topo */
+.start-counter{
+  counter-reset: Contador;
+}
+
+.print-counter::before{
+  content: counter(Contador);
+}
+
+.counter-increment:hover{
+  counter-increment: Contador;
+}
+
+/* Botão voltar ao topo */
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2rem;
+}
+
+/* Rodapé */
+.floor {
+  background-color: #01045f57;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 1px;
+  margin-top: 30px;
+  border-style: solid;
+  border-radius: 3rem;
+  border-color: #251a4a;
+}
